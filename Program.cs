@@ -11,6 +11,10 @@ namespace PropExample
         static void Main(string[] args)
         {
             TestOver(3L);
+
+            // 생성자
+            //Product p = new Product(); // 기본 생성자 (기정 생성자)는 생성자가 없을 경우에만 자동으로 생성
+            Product p = new Product("김석진", 1500);
         }
 
         // 오버로딩
