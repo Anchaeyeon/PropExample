@@ -10,6 +10,11 @@ namespace PropExample
     {
         static void Main(string[] args)
         {
+            TestOver(3L);
         }
+
+        // 오버로딩
+        //public static int TestOver(int input) { return 0; }
+        public static bool TestOver(float input) { return true; }
     }
 }
