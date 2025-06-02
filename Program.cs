@@ -20,11 +20,19 @@ namespace PropExample
             Product p = Product.getInstance("전정국", 1000);
 
             // 정적 생성자 예제 1
+            //Console.WriteLine("첫 번째 위치");
+            //Console.WriteLine(Sample.value); // Sample.value 값 조회 전에 생성자 호출
+            //Console.WriteLine("두 번째 위치");
+            //Sample sample = new Sample();
+            //Console.WriteLine("세 번째 위치");
+
+            // 정적 생성자 패턴 2
             Console.WriteLine("첫 번째 위치");
-            Console.WriteLine(Sample.value); // Sample.value 값 조회 전에 생성자 호출
-            Console.WriteLine("두 번째 위치");
-            Sample sample = new Sample();
-            Console.WriteLine("세 번째 위치");
+            Sample sample2 = new Sample();
+            Console.WriteLine("두번째 위치");
+            Console.WriteLine(Sample.value); // Sample 객체 생성 전, 레퍼런스 변수 생성 전에 정적 생성자 호출
+            Console.WriteLine("세번째 위치");
+
         }
 
         // 오버로딩
